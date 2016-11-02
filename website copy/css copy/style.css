@@ -1,0 +1,319 @@
+.body {
+	margin: auto;
+	padding: none;
+}
+
+----------HEADER-------------------------------------------
+
+
+.nameintro {
+	width: 100%;
+}
+
+.nameintro h1 {
+	font-family: Fjalla One, sans-serif;
+	font-size: 60pt;
+	text-transform: uppercase; 
+	text-align: center;
+	background-color: #fff;
+	margin-top: 80px;
+}
+
+.nameintro p {
+	font-family: Roboto, sans-serif;
+	font-size: 16pt;
+	text-align: center;
+	font-weight: 300;
+	color: #777;
+}
+
+.cover-photo img {
+	width: 100%;
+	margin: auto;
+}
+
+
+--------------NAVBAR---------------------------------
+
+.navbar {
+	width: 100%;
+	font-family: Raleway, sans-serif;
+	font-size: 14pt;
+	font-weight: 100;
+	line-height: 120%;
+	border: 0px;
+}
+
+.navbar-list {
+	text-align: center;
+	padding-left: 0px;
+	margin: auto;
+}
+
+.navbar li {
+	display: inline-block;
+	margin: auto;
+	padding: 20px;
+	border: 0px;
+	border-radius: 5px;
+}
+
+.navbar li a, 
+.btn-primary {
+	background-color: #a2dddd;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #555;
+	outline: 0px;
+	border-radius: 5px;
+	border: 0px;
+
+}
+
+
+.navbar li a:hover, 
+.navbar li a:active, 
+.btn-primary:hover, 
+.btn-primary:active {
+    color: #fff;
+    background-color: #286090;
+    border: 0px;
+
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+	outline-color: none;
+	margin: 20px;
+	border: 0px;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    font-size: 14px;
+    background-color: #fff;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;  
+}
+
+
+.dropdown-menu li {
+	width: 100%;
+	padding: 0px;
+	background-color: #a2dddd;
+	margin-left: 0px;
+	margin-right: 0px;
+	border: 0px;
+	border-radius: 0px;
+}
+
+.dropdown-menu li a {
+	background-color: #a2dddd;
+	color: black;
+	padding: 5px;
+	margin: 5px;
+	text-transform: capitalize;
+
+}
+
+.dropdown-menu li:hover a,
+.dropdown-menu li:active a,
+.dropdown-menu li:hover,
+.dropdown-menu li:active {
+    background-color: #286090;
+    color: white;
+}
+
+
+
+
+-----------ABOUT/CONTACT-----------------------
+
+
+.aboutpic {
+	width: 100%;
+}
+
+.abouttext {
+	font: Roboto, sans-serif;
+	line-height: 160%;
+}
+
+.abouttext h1 {
+	font-size: 1.6em;
+	font-weight: 500;
+}
+
+.abouttext p {
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+.contact {
+	font-family: Roboto, sans-serif;
+	line-height: 160%;
+}
+
+.contactphone,
+.contactemail {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contactphone h4, 
+.contactphone p {
+	display: inline;
+	vertical-align: top;
+}
+
+.contactemail h4,
+.contactemail p{
+	display: inline;
+	vertical-align: top;
+}
+
+
+.contactform {
+	font-family: Roboto, sans-serif;
+}
+
+.contactform h2{
+	font-family: Roboto, sans-serif;
+	margin-top: 10px;
+
+}
+
+
+-------------CAROUSELS----------
+
+
+.carousel {
+	height: 100vh;
+}
+
+.carousel-inner {
+	height: 90vh;
+}
+
+.carousel-inner .item{
+	text-align: center;
+}
+
+.carousel-inner img {
+  max-height: 90vh;
+  margin: 0 auto;
+}
+
+.carousel-indicators li {
+	background-color: #B0B0B0;
+	border-color: #B0B0B0;
+}
+
+.carousel-indicators li.active {
+	background-color: none;
+	border-color: #B0B0B0;	
+}
+
+
+
+
+
+-------------ILLUSTRATION---------
+
+.illustration-intro {
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.illustration-intro p {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+
+
+
+-------------BENTHIC---------------
+.carousel-benthic-progress {
+	margin: 30px;
+}
+
+
+
+
+-------------LONGBOARD--------------
+.longboard-pic,
+.longboard-intro {
+	display: inline;
+}
+
+
+-------------COLORING BOOK-----------
+
+.coloringbook-intro {
+	font-family: Roboto, sans-serif;
+}
+
+.coloringbook-pic {
+	display: inline;
+	width: 100%;
+}
+
+
+----FOOTER----------------------------------------------------
+
+
+.footer {
+	background-color: #a2dddd;
+	display: none;
+	text-align: center;
+}
+
+
+.footer-icons {
+	display: block; 
+	text-align: center;
+	padding: 3em;
+	margin-top: 2em;
+	line-height: 8em;
+
+
+}
+
+
+.footer-icons a {
+	text-align: center;
+	padding: 0.5em;
+	margin: 0.5em;
+
+
+
+}
+
+.icon {
+	height: 5em;
+	width: 5em;
+}
+
+
+
+-----to do:
+adjust footer to be responsive (shrink spaces between and smaller icons)
+
+
