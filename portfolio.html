@@ -39,11 +39,10 @@
 
 <body>
 
-
     <!--navigation-->
     <div class="container">
         <div class="row">      
-            <div class="col-sm-12 col-md-6 col-lg-3"    
+            <div class="col-sm-12 col-md-12 col-lg-12"    
                 <div class="header">
                     <div class="nameintro">
                         <h1>Katie Kerr</h1>
@@ -51,18 +50,32 @@
                     </div>    
 
                     <div class="navbar">
-                        <ul class="navbar list">
-                            <li class="Home"><a ref="kkerrindex.html">Home</a></li>
-                            <li class="AboutContact"><a ref="kkerraboutcontact.html">About/Contact</a></li>
-                            <li class="Portfolio"><a ref="kkerrportfolio.html">Portfolio</a>
-                                <div class="subnav">
-                                    <li class="Illustration"><a ref="kkerrillustration.html">Illustration</a></li>
-                                    <li class="ColoringBook"><a ref="kkerrcoloringbook.html">Coloring Book</a></li>
-                                    <li class="Benthic Mural"><a ref="kkerrbenthic.html">'Benthic' Mural</a></li>
-                                </div>        
-                            </li>        
+
+                        <ul class="navbar-list">
+                            <li class="Home">
+                                <a ref="index.html">Home</a>
+                            </li>
+
+                            <li class="AboutContact">
+                                <a ref="aboutcontact.html">About/Contact</a>
+                            </li>
+                            
+                            <div class="dropdown">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                    Portfolio
+                                    <span class="caret"></span>
+                                </button>
+                                
+                                <ul class="dropdown-menu">
+                                    <li><a ref="illustration.html">Illustration</a></li>
+                                    <li><a ref="benthic.html">'Benthic' Mural</a></li>
+                                    <li><a ref="longboard.html">Personal Longboard</a></li>
+                                    <li><a ref="coloringbook.html">Coloring Book</a></li>
+                                </ul>
+                            </div>        
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>
