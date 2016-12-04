@@ -175,16 +175,32 @@
 	margin-bottom: 10px;
 }
 
-.contactphone h4, 
+.contactphone h4 {
+	display: inline;
+	vertical-align: top;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+
 .contactphone p {
 	display: inline;
 	vertical-align: top;
+	font-weight: 300;
+	font-size: 1.2em;
 }
 
-.contactemail h4,
+.contactemail h4{
+	display: inline;
+	vertical-align: top;
+	font-size: 1.3em;
+	font-weight: 400;
+}
+
 .contactemail p{
 	display: inline;
 	vertical-align: top;
+	font-weight: 300;
+	font-size: 1.2em;
 }
 
 
@@ -310,10 +326,4 @@
 	height: 5em;
 	width: 5em;
 }
-
-
-
------to do:
-adjust footer to be responsive (shrink spaces between and smaller icons)
-
 
