@@ -57,11 +57,11 @@
 
                         <ul class="navbar-list">
                             <li class="Home">
-                                <a href="index.html">Home</a>
+                                <a ref="index.html">Home</a>
                             </li>
 
                             <li class="AboutContact">
-                                <a href="aboutcontact.html">About/Contact</a>
+                                <a ref="aboutcontact.html">About/Contact</a>
                             </li>
                             
                             <div class="dropdown">
@@ -71,10 +71,10 @@
                                 </button>
                                 
                                 <ul class="dropdown-menu">
-                                    <li><a href="illustration.html">Illustration</a></li>
-                                    <li><a href="benthic.html">'Benthic' Mural</a></li>
-                                    <li><a href="longboard.html">Personal Longboard</a></li>
-                                    <li><a href="coloringbook.html">Coloring Book</a></li>
+                                    <li><a ref="illustration.html">Illustration</a></li>
+                                    <li><a ref="benthic.html">'Benthic' Mural</a></li>
+                                    <li><a ref="longboard.html">Personal Longboard</a></li>
+                                    <li><a ref="coloringbook.html">Coloring Book</a></li>
                                 </ul>
                             </div>        
                         </ul>
@@ -107,45 +107,52 @@
             </div>
 
             <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="contact"
+                <div class="contact">
                     <div class="contactbody">
                         <h2>Contact</h2>
-                            <div class="contactphone">
-                                <h4>Phone:</h4>
-                                <p>(303) 519-7091</p>
-                            </div>
-                                
-                            <div class="contactemail">
-                                <h4>Email:</h4>
-                                <p>katiekerr95@gmail.com</p>
-                            </div>
+                        <div class="contactphone">
+                            <h4>Phone:</h4>
+                            <p>(303) 519-7091</p>
+                        </div>
+                            
+                        <div class="contactemail">
+                            <h4>Email:</h4>
+                            <p>katiekerr95@gmail.com</p>
+                        </div>
                     </div>
                 </div> 
+
+                <br>
+                <br>
+                
+                <div class="form">
+                    <div class="contactform">
+                        <h2>Any questions or comments for me?</h2>
+                        <form action="action_page.php">
+                            Name:<br>
+                            <input type="text" name="form-name" value=""><br>
+                            <br>
+                            
+                            Email:<br>
+                            <input type="text" name="form-email" value=""><br>
+                            <br>
+
+                            Questions or comments:<br>
+                            <textarea NAME="form-text" ROWS=3 COLS=30></textarea>
+                            <br>
+                            <br>
+                            
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
             </div>
 
 
             <hr>
 
             <div class="col-sm-5 col-md-5 col-lg-5">
-                <div class="contactform">
-                    <h2>Any questions or comments for me?</h2>
-                    <form action="action_page.php">
-                        Name:<br>
-                        <input type="text" name="form-name" value=""><br>
-                        <br>
-                        
-                        Email:<br>
-                        <input type="text" name="form-email" value=""><br>
-                        <br>
-
-                        Questions or comments:<br>
-                        <textarea NAME="form-text" ROWS=3 COLS=30></textarea>
-                        <br>
-                        <br>
-                        
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
+                
             </div>
             
         </div>
