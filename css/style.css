@@ -3,6 +3,7 @@
 	padding: none;
 }
 
+
 ----------HEADER-------------------------------------------
 
 
@@ -245,15 +246,86 @@
 	border-color: #B0B0B0;	
 }
 
+.carousel-control.right,
+.carousel-control.left {
+	background: none;
 
+}
 
+.glyphicon-chevron-right,
+.glyphicon-chevron-left {	
+	color: black;
+}
+
+.glyphicon-chevron-right:before,
+.glyphicon-chevron-left:before {
+
+	color: gray;
+}
+
+__________________________________________________________________________________
+/*
+inspired from http://codepen.io/Rowno/pen/Afykb 
+*/
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+
+_______________________________________________________________________________________________________
 
 
 -------------ILLUSTRATION---------
 
 .illustration-intro {
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 
 }
 
@@ -268,6 +340,10 @@
 -------------BENTHIC---------------
 .carousel-benthic-progress {
 	margin: 30px;
+}
+
+.benthic-carousel-titles {
+	text-align: center;
 }
 
 
@@ -308,8 +384,6 @@
 	padding: 3em;
 	margin-top: 2em;
 	line-height: 8em;
-
-
 }
 
 
@@ -317,9 +391,6 @@
 	text-align: center;
 	padding: 0.5em;
 	margin: 0.5em;
-
-
-
 }
 
 .icon {
