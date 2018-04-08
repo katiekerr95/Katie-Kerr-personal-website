@@ -1,0 +1,415 @@
+.body {
+	padding: 60px;
+}
+
+.container {
+	float: left;
+}
+
+
+
+
+----------HEADER-------------------------------------------
+.header {
+	display: inline-block;
+	border: 0px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.name {
+	display: inline-block;
+	float: left;
+}
+
+
+/*.name h1:hover {
+    cursor: pointer;
+}
+*/
+
+.name h1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 27pt;
+	font-weight: 700;
+	text-transform: uppercase; 
+	text-align: left;
+	letter-spacing: 0.70px;
+
+	background-color: #fff;
+	
+	margin-top: 80px;
+	margin-right: 80px;
+	margin-bottom: 40px;
+	margin-left: 40px;
+	cursor: default;
+}
+
+.name a {
+	text-decoration: none;
+	color: #111;
+}
+
+
+.navbar {
+	line-height: 120%;
+	border: 0px;
+	display: inline-block;
+	/*^this is what changed the contact-squish problem*/
+}
+
+
+
+@media only screen and (min-width: 693px) {
+	/*everything bigger than mobile*/
+
+	.navbar li {
+		border: 0px;
+		display: inline-block;	
+		position: relative;
+
+	}	
+
+	.navbar-list {
+		float: left;
+		position: relative;
+		padding-top: 90px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+
+	}
+}
+
+@media only screen and (max-width: 692px){
+	/*mobile*/
+	
+	.navbar-list {
+		padding-left: 70px;
+		padding-bottom: 20px;
+
+	}
+
+	.navbar li {
+		padding-top: 30px;
+		display: block;
+
+	}	
+
+	.navbar {
+		display: block;
+	}	
+
+	.name {
+		display: block;
+	}
+}
+
+
+
+.navbar li a {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 12pt;
+	font-weight: 400;
+
+	text-align: left;
+	text-decoration: none;
+	color: #aaa;
+
+	outline: 0px;
+	border-radius: 5px;
+	border: 0px;
+
+	margin-right: 30px;
+	
+	display: block;
+	position: relative;
+}
+
+.navbar-list li a .contact {
+	padding-right: 0px;
+}
+
+.navbar a:hover, 
+.navbar a:active {
+    color: #111;
+    border: 0px;
+    cursor: pointer;
+}
+
+
+
+.cover-photo img {
+	width: 100%;
+	margin: auto;
+}
+
+
+
+-----------ABOUT-----------------------
+
+
+.aboutpic {
+	width: 100%;
+}
+
+.aboutpic img {
+	padding-left: 40px;
+	padding-bottom: 40px;
+}
+
+.abouttext {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+
+.abouttext h2 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	font-size: 2.2em;
+}
+
+.abouttext p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 160%;
+}
+
+.abouttext a:hover {
+	cursor: pointer;
+}
+
+
+
+-----------CONTACT-----------------------
+
+.contact-container {
+	display: block;
+}
+
+.contactdetails {
+	display: block;
+	padding-left: 40px;
+	padding-bottom: 10px;
+	padding-right: 40px;
+	float: left;
+}
+
+.contactdetails h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.9em;
+	padding-bottom: 10px;
+}
+
+
+.contactdetails h4 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;	
+}
+
+
+.contactdetails p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.1em;
+	line-height: 160%;
+}
+
+.contacttext {
+	padding-left: 40px;
+}
+
+
+.form {
+	display: inline-block;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.form-wrapper {
+	padding-left: 40px;
+}
+
+.form h3 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	font-size: 1.9em;
+}
+
+.form label {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+}
+
+.form input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+.form input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: vertical;
+}
+
+.form input[type=submit] {
+	border-radius: 4px;
+	background-color: #eee;
+}
+
+
+
+
+
+
+------------------PORTFOLIO----------------------
+
+.content-wrapper {
+	width: 100%;
+}
+
+.content {
+
+}
+
+.content img {
+	width: 400px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+
+}
+
+.content-list {
+	display: grid;
+	grid-template-columns: [1] 150px [2] 1fr [3] 1fr [4] 1fr [5];
+	grid-template-rows: repeat(67 20px);
+	grid-gap: 20px;
+	justify-items: stretch;
+	align-items: stretch;
+	padding-left: 40px;
+}
+
+.content-list p {
+	font: helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.header {
+	grid area: 1 / 1 / 67 / 2;
+}
+
+#blue {
+	grid-area: 1 / 2 / 11 / 3;
+}
+
+#duck {
+	grid-area: 1 / 3 / 8 / 4;
+}
+
+#joy {
+	grid-area: 1/4/11/5;
+}
+
+#r-blossom {
+	grid-area: 11/2/18/3;
+}
+
+#breakfast {
+	grid-area: 8/3/18/4;
+}
+
+#surprise {
+	grid-area: 11/4/18/5;
+}
+
+#boxes {
+	grid-area: 18/2/25/3;
+}
+
+#medusa {
+	grid-area: 18/3/26/4;
+}
+
+#gentle {
+	grid-area: 18/4/28/5;
+}
+
+#shit {
+	grid-area: 25/2/34/3;
+}
+
+#love {
+	grid-area: 26/3/32/4;
+}
+
+#grit {
+	grid-area: 28/4/38/5;
+}
+
+#dust {
+	grid-area: 34/2/40/3;
+}
+
+#peculiar {
+	grid-area: 32/3/42/4;
+}
+
+#straw {
+	grid-area: 40/2/50/3;
+}
+
+#r-egg {
+	grid-area: 42/3/49/4;
+}
+
+#worm {
+	grid-area: 38/4/49/5;
+}
+
+#boy {
+	grid-area: 50/2/60/3;
+}
+
+#nachos {
+	grid-area: 49/3/60/4;
+}
+
+#amber {
+	grid-area: 49/4/59/5;
+}
+
+#r-spiky {
+	grid-area: 60/2/67/3;
+}
+
+#do {
+	grid-area: 59/3/67/4;
+}
+
+#bird-fuck {
+	grid-area: 60/4/67/5;
+}
+
+
+
+
+
+
+
