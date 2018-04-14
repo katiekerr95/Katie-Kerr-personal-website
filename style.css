@@ -50,6 +50,10 @@
 	color: #111;
 }
 
+.name a:hover {
+    text-decoration: none;
+}
+
 
 .navbar {
 	line-height: 120%;
